@@ -83,22 +83,9 @@
     width: 60%;
   }
 
-  .delivered-meals {
-    justify-content: center;
-    margin-top: 3.2rem;
-  }
-
-  .logos img {
-    height: 2.4rem;
-  }
-
-  .step-number {
+  /* .step-number {
     font-size: 7.4rem;
-  }
-
-  .meal-content {
-    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
-  }
+  } */
 
   .section-testimonials {
     grid-template-columns: 1fr;
@@ -202,21 +189,12 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .diets {
-    grid-column: 1 / -1;
-    justify-self: center;
-  }
-
   .heading-secondary {
     margin-bottom: 4.8rem;
   }
 
   .service-container {
     gap: 4.4rem;
-  }
-
-  .pricing-plan {
-    width: 100%;
   }
 
   .grid--footer {
@@ -270,11 +248,7 @@
     width: 80%;
   }
 
-  .logos img {
-    height: 1.2rem;
-  }
-
-  .step-img-box:nth-child(2) {
+  /* .step-img-box:nth-child(2) {
     grid-row: 1;
   }
 
@@ -284,7 +258,7 @@
 
   .step-img-box {
     transform: translateY(2.4rem);
-  }
+  } */
 
   .testimonials {
     grid-template-columns: 1fr;
