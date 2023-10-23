@@ -355,7 +355,7 @@
 }
 
 .contact-us-img-box {
-  background-image: linear-gradient(to right bottom, rgba(31, 66, 112, 0.3), rgba(6, 45, 96, 0.3)), url("../img/destination.jpg");
+  background-image: linear-gradient(to right bottom, rgba(31, 66, 112, 0.3), rgba(6, 45, 96, 0.3)), url("../img/contact-us.jpg");
   background-size: cover;
   background-position: center;
 }
