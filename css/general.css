@@ -207,55 +207,10 @@ body {
   color: #555;
 }
 
-.btn--form {
-  background-color: #45260a;
-  color: #fdf2e9;
-  align-self: end;
-  padding: 1.2rem;
-}
-
-.link:link,
-.link:visited {
-  display: inline-block;
-  color: #e67e22;
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 2px;
-  transition: all 0.3s;
-}
-
 .link:hover,
 .link:active {
   color: #0A5AC2;
   border-bottom: 1px solid transparent;
-}
-
-.list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-
-.list-item {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-  line-height: 1.2;
-}
-
-.list-icon {
-  width: 3rem;
-  height: 3rem;
-  color: #e67e22;
-}
-
-*:focus {
-  outline: none;
-  /* outline: 4px dotted #e67e22; */
-  /* outline-offset: 8px; */
-  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /* HELPER/SETTINGS CLASSES */
