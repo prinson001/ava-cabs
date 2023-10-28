@@ -1,0 +1,14 @@
+.delay{
+    transition-delay: 1500ms;
+}
+.smooth-anime{
+    transition: all 0.5s linear;
+}
+.left-in{
+    opacity: 0;
+    transform: translateX(-300px);
+}
+.down-in{
+    opacity: 0;
+    transform: translateY(300px);
+}
