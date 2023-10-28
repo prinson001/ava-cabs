@@ -96,8 +96,8 @@ checkFlexGap();
 
 const options={
   root: null,
-  threshold: 0.1,
-  rootMargin: "0px 0px -200px 0px",
+  threshold: 0.3,
+  rootMargin: "0px 0px -50px 0px",
 }
 const animationObserver = new IntersectionObserver( (entries ,animationObserver )=>{
 
