@@ -172,11 +172,12 @@
   color: white;
 }
 
-.section--about p {
+.section--about .about-para {
   color: white;
-  padding: 0 5rem;
+  padding: 0 12rem;
   font-size: 1.8rem;
   line-height: 1.8;
+  margin-top:2.4rem;
 }
 
 .test {

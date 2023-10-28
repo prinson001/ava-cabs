@@ -210,8 +210,8 @@
     grid-row: 1;
   }
 
-  .section--about p {
-    padding: 0;
+  .section--about .about-para {
+    padding: 1.5rem;
   }
 }
 
