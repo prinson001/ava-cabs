@@ -127,12 +127,13 @@ arr.forEach((a) => {
 //EMAIL SERVICE
 
 function sendMail() {
+  event.preventDefault();
   var params = {
     name: document.getElementById("full-name").value,
     number: document.getElementById("number").value,
     email: document.getElementById("email").value,
-    // start_date: document.getElementById("start-date").value,
-    // end_date: document.getElementById("end-date").value,
+    start_date: document.getElementById("start-date").value,
+    end_date: document.getElementById("end-date").value,
     place: document.getElementById("place").value,
   };
 
@@ -142,12 +143,12 @@ function sendMail() {
   emailjs
     .send(serviceID, templateID, params)
     .then((res) => {
-      // document.getElementById("full-name").value = "";
-      // document.getElementById("number").value = "";
-      // document.getElementById("start-date").value = "";
-      // document.getElementById("end-date").value = "";
-      // document.getElementById("email").value = "";
-      // document.getElementById("place").value = "";
+      document.getElementById("full-name").value = "";
+      document.getElementById("number").value = "";
+      document.getElementById("start-date").value = "";
+      document.getElementById("end-date").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("place").value = "";
       console.log(res);
       alert("Your message sent successfully!!");
     })
