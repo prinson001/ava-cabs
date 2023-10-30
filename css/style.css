@@ -46,7 +46,7 @@
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #0A5AC2;
+  color: #0a5ac2;
 }
 
 /* MOBILE */
@@ -90,7 +90,7 @@
 /**************************/
 
 .section-hero {
-  background-color: #062D60;
+  background-color: #062d60;
   height: 90vh;
   padding: 10rem 0 9.6rem 0;
   clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
@@ -161,7 +161,8 @@
   padding: 9.6rem;
   width: 100vw;
   height: 70vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('z.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("z.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -177,7 +178,7 @@
   padding: 0 12rem;
   font-size: 1.8rem;
   line-height: 1.8;
-  margin-top:2.4rem;
+  margin-top: 2.4rem;
 }
 
 .test {
@@ -248,14 +249,19 @@
 .contact-us {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  background-image: linear-gradient(to right bottom, #1f4270, #062D60);
+  background-image: linear-gradient(to right bottom, #1f4270, #062d60);
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
   overflow: hidden;
 }
 
 .contact-us-img-box {
-  background-image: linear-gradient(to right bottom, rgba(31, 66, 112, 0.3), rgba(6, 45, 96, 0.3)), url("../img/contact-us.jpg");
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(31, 66, 112, 0.3),
+      rgba(6, 45, 96, 0.3)
+    ),
+    url("../img/contact-us.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -303,7 +309,7 @@
 }
 
 .btn-form {
-  background-color: #0A5AC2;
+  background-color: #0a5ac2;
   border: none;
   color: white;
   font-size: 2rem;

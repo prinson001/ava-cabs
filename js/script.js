@@ -1,10 +1,6 @@
 const h1 = document.querySelector(".heading-primary");
 
 ///////////////////////////////////////////////////////////
-// Set current year
-
-
-///////////////////////////////////////////////////////////
 // Make mobile navigation work
 
 const btnNavEl = document.querySelector(".btn-mobile-nav");
@@ -72,6 +68,7 @@ obs.observe(sectionHeroEl);
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
+
 function checkFlexGap() {
   var flex = document.createElement("div");
   flex.style.display = "flex";
@@ -90,36 +87,38 @@ function checkFlexGap() {
 }
 checkFlexGap();
 
-
 /////////////////////////////////////////////////////////////////////
 //ANIMATION INTERSECTION OBSERVER
 
-const options={
+const options = {
   root: null,
   threshold: 0,
   rootMargin: "0px 0px -20px 0px",
-}
-const animationObserver = new IntersectionObserver( (entries ,animationObserver )=>{
-
-  entries.forEach( entry=>{
-    if(! entry.isIntersecting)  return ; //guard case
+};
+const animationObserver = new IntersectionObserver(
+  (entries, animationObserver) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return; //guard case
       console.log(entry.target);
-      entry.target.classList.toggle(entry.target.getAttribute('data-animation_class'));
+      entry.target.classList.toggle(
+        entry.target.getAttribute("data-animation_class")
+      );
       animationObserver.unobserve(entry.target);
-  } );
-
-} , options );
-const j = document.querySelector('.subheading');
-const llll = document.querySelector('.heading-secondary');
-const k = document.querySelector('.service-container');
-const jj = document.querySelector('.about-heading');
-const jjj = document.querySelector('.about-para');
-const arr =[];
+    });
+  },
+  options
+);
+const j = document.querySelector(".subheading");
+const llll = document.querySelector(".heading-secondary");
+const k = document.querySelector(".service-container");
+const jj = document.querySelector(".about-heading");
+const jjj = document.querySelector(".about-para");
+const arr = [];
 arr.push(llll);
 arr.push(k);
 arr.push(j);
 arr.push(jj);
 arr.push(jjj);
-arr.forEach((a)=>{
+arr.forEach((a) => {
   animationObserver.observe(a);
-})
+});
