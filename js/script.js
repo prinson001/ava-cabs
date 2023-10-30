@@ -122,3 +122,34 @@ arr.push(jjj);
 arr.forEach((a) => {
   animationObserver.observe(a);
 });
+
+/////////////////////////////////////////////////////////////////////
+//EMAIL SERVICE
+
+function sendMail() {
+  var params = {
+    name: document.getElementById("full-name").value,
+    number: document.getElementById("number").value,
+    email: document.getElementById("email").value,
+    // start_date: document.getElementById("start-date").value,
+    // end_date: document.getElementById("end-date").value,
+    place: document.getElementById("place").value,
+  };
+
+  const serviceID = "service_e9pi0zh";
+  const templateID = "template_pxnqn9e";
+
+  emailjs
+    .send(serviceID, templateID, params)
+    .then((res) => {
+      // document.getElementById("full-name").value = "";
+      // document.getElementById("number").value = "";
+      // document.getElementById("start-date").value = "";
+      // document.getElementById("end-date").value = "";
+      // document.getElementById("email").value = "";
+      // document.getElementById("place").value = "";
+      console.log(res);
+      alert("Your message sent successfully!!");
+    })
+    .catch((err) => console.log(err));
+}
