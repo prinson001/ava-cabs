@@ -1,5 +1,3 @@
-/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
-
 /**************************/
 /* BELOW 1344px (Smaller desktops) */
 /**************************/
@@ -18,9 +16,9 @@
   }
 }
 
-/**************************/
+/*************************************/
 /* BELOW 1200px (Landscape Tablets) */
-/**************************/
+/***********************************/
 
 @media (max-width: 75em) {
   html {
@@ -82,10 +80,6 @@
   .hero-img {
     width: 60%;
   }
-
-  /* .step-number {
-    font-size: 7.4rem;
-  } */
 
   .section-testimonials {
     grid-template-columns: 1fr;
@@ -246,18 +240,6 @@
   .hero-img {
     width: 80%;
   }
-
-  /* .step-img-box:nth-child(2) {
-    grid-row: 1;
-  }
-
-  .step-img-box:nth-child(6) {
-    grid-row: 5;
-  }
-
-  .step-img-box {
-    transform: translateY(2.4rem);
-  } */
 
   .testimonials {
     grid-template-columns: 1fr;
