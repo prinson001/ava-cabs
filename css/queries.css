@@ -256,6 +256,11 @@
 
   .service-container {
     grid-template-columns: 1fr;
+    padding: 0 6.8rem;
+  }
+
+  .service-container-2{
+    padding: 0 6.9rem;
   }
 
   .service-container-2 .service-card{
