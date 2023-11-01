@@ -98,7 +98,7 @@ const options = {
 const animationObserver = new IntersectionObserver(
   (entries, animationObserver) => {
     entries.forEach((entry) => {
-      if (!entry.isIntersecting) return; //guard case
+      if (!entry.isIntersecting) return;
       entry.target.classList.toggle(
         entry.target.getAttribute("data-animation_class")
       );
@@ -107,29 +107,21 @@ const animationObserver = new IntersectionObserver(
   },
   options
 );
-const j = document.querySelector(".subheading");
-const llll = document.querySelector(".heading-secondary");
-const k = document.querySelector(".service-container");
-const jj = document.querySelector(".about-heading");
-const jjj = document.querySelectorAll(".about-para");
-const cards = document.querySelectorAll('.service-card');
-const testimonail_heading = document.querySelector('.testi-subheading');
-const contactHeading = document.querySelector('.contact-subheading');
-const contactSubHeading = document.querySelector('.contact-us-text');
-const arr = [];
-cards.forEach((e)=>{
+const aboutSectionParas = document.querySelectorAll(".about-para");
+const ServiceCards = document.querySelectorAll('.service-card');
+const arr = [document.querySelector(".service-subheading"),
+              document.querySelector(".service-heading"),
+              document.querySelector(".about-heading"),
+              document.querySelector('.testi-subheading'),
+              document.querySelector('.contact-subheading'),
+              document.querySelector('.contact-us-text')
+            ];
+ServiceCards.forEach((e)=>{
   arr.push(e);
 });
-jjj.forEach((e)=>{
+aboutSectionParas.forEach((e)=>{
   arr.push(e);
 });
-arr.push(testimonail_heading);
-arr.push(contactHeading);
-arr.push(contactSubHeading);
-arr.push(llll);
-arr.push(k);
-arr.push(j);
-arr.push(jj);
 arr.forEach((a) => {
   animationObserver.observe(a);
 });
