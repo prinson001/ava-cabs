@@ -108,18 +108,19 @@ const animationObserver = new IntersectionObserver(
   options
 );
 const aboutSectionParas = document.querySelectorAll(".about-para");
-const ServiceCards = document.querySelectorAll('.service-card');
-const arr = [document.querySelector(".service-subheading"),
-              document.querySelector(".service-heading"),
-              document.querySelector(".about-heading"),
-              document.querySelector('.testi-subheading'),
-              document.querySelector('.contact-subheading'),
-              document.querySelector('.contact-us-text')
-            ];
-ServiceCards.forEach((e)=>{
+const ServiceCards = document.querySelectorAll(".service-card");
+const arr = [
+  document.querySelector(".service-subheading"),
+  document.querySelector(".service-heading"),
+  document.querySelector(".about-heading"),
+  document.querySelector(".testi-subheading"),
+  document.querySelector(".contact-subheading"),
+  document.querySelector(".contact-us-text"),
+];
+ServiceCards.forEach((e) => {
   arr.push(e);
 });
-aboutSectionParas.forEach((e)=>{
+aboutSectionParas.forEach((e) => {
   arr.push(e);
 });
 arr.forEach((a) => {
@@ -160,25 +161,25 @@ function sendMail(e) {
 // /////////////////////////////////////////////////////////////////
 // IMAGE OPTIMAZATION
 
-const images = document.querySelectorAll('img');
+const images = document.querySelectorAll("img");
 console.log(images);
-imageObserverOptions={
-  threshold:0,
-  root:null,
-  rootMargin:'0px'
-}
-const imageObserver = new IntersectionObserver((entries , imageObserver)=>{
-  entries.forEach(e=>{
-    if(! e.isIntersecting) return ;
-    if(! e.target.src.lastIndexOf('compressed') === -1) return;
-    e.target.src = e.target.src.replace('-compressed','');
-    e.target.addEventListener('load' , function(){
-        e.target.classList.remove('blur');
-    })
+imageObserverOptions = {
+  threshold: 0,
+  root: null,
+  rootMargin: "0px",
+};
+const imageObserver = new IntersectionObserver((entries, imageObserver) => {
+  entries.forEach((e) => {
+    if (!e.isIntersecting) return;
+    if (!e.target.src.lastIndexOf("compressed") === -1) return;
+    e.target.src = e.target.src.replace("-compressed", "");
+    e.target.addEventListener("load", function () {
+      e.target.classList.remove("blur");
+    });
     imageObserver.unobserve(e.target);
   });
-},imageObserverOptions);
+}, imageObserverOptions);
 
-images.forEach((e)=>{
+images.forEach((e) => {
   imageObserver.observe(e);
-})
+});

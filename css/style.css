@@ -292,8 +292,9 @@
 }
 
 .contact-us-icon{
+  text-decoration: none;
   color: white;
-  
+  cursor: pointer;
 }
 
 .contact-us-form {
