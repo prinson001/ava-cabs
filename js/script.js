@@ -170,7 +170,7 @@ imageObserverOptions={
 const imageObserver = new IntersectionObserver((entries , imageObserver)=>{
   entries.forEach(e=>{
     if(! e.isIntersecting) return ;
-    if(! e.target.src.includes('compressed')) return;
+    if(! e.target.src.lastIndexOf('compressed') === -1) return;
     e.target.src = e.target.src.replace('-compressed','');
     e.target.addEventListener('load' , function(){
         e.target.classList.remove('blur');
