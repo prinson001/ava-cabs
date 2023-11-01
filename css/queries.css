@@ -170,6 +170,10 @@
   .main-nav-link:visited {
     font-size: 3rem;
   }
+
+  .service-container-2 .service-card{
+    max-width: 48.01%;
+  }
 }
 
 /**************************/
@@ -252,6 +256,10 @@
 
   .service-container {
     grid-template-columns: 1fr;
+  }
+
+  .service-container-2 .service-card{
+    max-width: 100%;
   }
 
   .card-text {
