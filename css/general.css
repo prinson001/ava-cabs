@@ -226,3 +226,7 @@ body {
 strong {
   font-weight: 500;
 }
+
+.blur{
+  filter: blur(5px);
+}

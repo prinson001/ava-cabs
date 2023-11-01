@@ -99,7 +99,6 @@ const animationObserver = new IntersectionObserver(
   (entries, animationObserver) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return; //guard case
-      console.log(entry.target);
       entry.target.classList.toggle(
         entry.target.getAttribute("data-animation_class")
       );
@@ -165,3 +164,29 @@ function sendMail(e) {
     })
     .catch((err) => console.log(err));
 }
+
+// /////////////////////////////////////////////////////////////////
+// IMAGE OPTIMAZATION
+
+const images = document.querySelectorAll('img');
+console.log(images);
+imageObserverOptions={
+  threshold:0,
+  root:null,
+  rootMargin:'0px'
+}
+const imageObserver = new IntersectionObserver((entries , imageObserver)=>{
+  entries.forEach(e=>{
+    if(! e.isIntersecting) return ;
+    if(! e.target.src.includes('compressed')) return;
+    e.target.src = e.target.src.replace('-compressed','');
+    e.target.addEventListener('load' , function(){
+        e.target.classList.remove('blur');
+    })
+    imageObserver.unobserve(e.target);
+  });
+},imageObserverOptions);
+
+images.forEach((e)=>{
+  imageObserver.observe(e);
+})
