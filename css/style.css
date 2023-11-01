@@ -130,6 +130,11 @@
   gap: 2.8rem;
 }
 
+.service-container-2{
+  display: flex;
+  justify-content: center;
+}
+
 .service-card {
   box-shadow: 0 1.4rem 2.8rem rgb(0, 0, 0, 0.1);
   border-radius: 11px;
@@ -140,6 +145,11 @@
 
 .service-img {
   width: 100%;
+}
+
+.service-container-2 .service-card{
+  margin-top:4.8rem ;
+  max-width: 23.25%;
 }
 
 .card-text {
