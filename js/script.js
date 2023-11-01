@@ -112,17 +112,25 @@ const j = document.querySelector(".subheading");
 const llll = document.querySelector(".heading-secondary");
 const k = document.querySelector(".service-container");
 const jj = document.querySelector(".about-heading");
-const jjj = document.querySelector(".about-para");
+const jjj = document.querySelectorAll(".about-para");
 const cards = document.querySelectorAll('.service-card');
+const testimonail_heading = document.querySelector('.testi-subheading');
+const contactHeading = document.querySelector('.contact-subheading');
+const contactSubHeading = document.querySelector('.contact-us-text');
 const arr = [];
 cards.forEach((e)=>{
   arr.push(e);
 });
+jjj.forEach((e)=>{
+  arr.push(e);
+});
+arr.push(testimonail_heading);
+arr.push(contactHeading);
+arr.push(contactSubHeading);
 arr.push(llll);
 arr.push(k);
 arr.push(j);
 arr.push(jj);
-arr.push(jjj);
 arr.forEach((a) => {
   animationObserver.observe(a);
 });
