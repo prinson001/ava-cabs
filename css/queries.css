@@ -252,7 +252,7 @@
 
   .service-container {
     grid-template-columns: 1fr;
-    width: 80%;
+    width: 85%;
   }
 
   .service-container-2 .service-card {
