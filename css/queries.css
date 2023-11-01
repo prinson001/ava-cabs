@@ -102,6 +102,10 @@
     grid-template-columns: 3fr 2fr;
   }
 
+  .contact-us-icon-container{
+    padding: 0 1rem 1.2rem 1rem;
+  }
+
   .contact-us-form {
     grid-template-columns: 1fr;
   }
