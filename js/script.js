@@ -113,7 +113,11 @@ const llll = document.querySelector(".heading-secondary");
 const k = document.querySelector(".service-container");
 const jj = document.querySelector(".about-heading");
 const jjj = document.querySelector(".about-para");
+const cards = document.querySelectorAll('.service-card');
 const arr = [];
+cards.forEach((e)=>{
+  arr.push(e);
+});
 arr.push(llll);
 arr.push(k);
 arr.push(j);
@@ -126,8 +130,8 @@ arr.forEach((a) => {
 /////////////////////////////////////////////////////////////////////
 //EMAIL SERVICE
 
-function sendMail() {
-  event.preventDefault();
+function sendMail(e) {
+  e.preventDefault();
   var params = {
     name: document.getElementById("full-name").value,
     number: document.getElementById("number").value,
@@ -136,7 +140,6 @@ function sendMail() {
     end_date: document.getElementById("end-date").value,
     place: document.getElementById("place").value,
   };
-
   const serviceID = "service_e9pi0zh";
   const templateID = "template_pxnqn9e";
 
