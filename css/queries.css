@@ -79,14 +79,6 @@
     width: 60%;
   }
 
-  .section-testimonials {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
   .service-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 4.4rem;
@@ -94,6 +86,10 @@
 
   .card-text {
     padding: 4.4rem 3.6rem;
+  }
+
+  .testimonials {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .contact-us {
@@ -244,12 +240,7 @@
   }
 
   .testimonials {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.2rem;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .service-container {
