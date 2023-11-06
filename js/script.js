@@ -31,6 +31,8 @@ allLinks.forEach(function (link) {
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
+    } else {
+      location.href = href;
     }
 
     // Close mobile naviagtion
