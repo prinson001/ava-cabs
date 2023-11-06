@@ -204,6 +204,14 @@
   .section--about .about-para {
     padding: 1.5rem;
   }
+
+  .photo-gallery {
+    gap: 1rem;
+  }
+  
+  .photo-column {
+    gap: 1rem;
+  }
 }
 
 /**************************/
@@ -272,6 +280,14 @@
 
   .section--about {
     padding: 9.6rem 3.2rem;
+  }
+
+  .photo-gallery {
+    gap: 0.5rem;
+  }
+  
+  .photo-column {
+    gap: 0.5rem;
   }
 }
 
