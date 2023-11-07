@@ -168,6 +168,10 @@
   .main-nav-link:visited {
     font-size: 3rem;
   }
+
+  .section-floating-icon{
+    display: block;
+  }
 }
 
 /**************************/

@@ -357,6 +357,31 @@
 }
 
 /*********************************/
+/* FLOATING ICON */
+/*********************************/
+
+.section-floating-icon{
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  z-index: 1;
+}
+
+.floating-icon{
+  display: flex;
+  background-color: #cee2fc;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  cursor: pointer;
+  color: #333;
+  font-size: 5rem;
+  border-radius: 50%;
+}
+
+/*********************************/
 /* FOOTER */
 /*********************************/
 
