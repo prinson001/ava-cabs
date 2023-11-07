@@ -360,7 +360,7 @@
 /* FLOATING ICON */
 /*********************************/
 
-.section-floating-icon{
+.section-floating-icon {
   display: none;
   position: fixed;
   right: 20px;
@@ -368,7 +368,7 @@
   z-index: 1;
 }
 
-.floating-icon{
+.floating-icon {
   display: flex;
   background-color: #cee2fc;
   justify-content: center;
