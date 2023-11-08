@@ -110,11 +110,11 @@ body {
   background-color: #cee2fc;
   justify-content: center;
   align-items: center;
-  width: 8rem;
-  height: 8rem;
+  width: 6rem;
+  height: 6rem;
   cursor: pointer;
   color: #333;
-  font-size: 5rem;
+  font-size: 4rem;
   border-radius: 50%;
 }
 
