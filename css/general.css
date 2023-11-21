@@ -17,8 +17,6 @@ body {
   overflow-x: hidden;
 }
 
-
-
 .container {
   max-width: 120rem;
   padding: 0 3.2rem;
@@ -90,8 +88,6 @@ body {
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
-
-
 
 .section-floating-icon {
   display: none;
