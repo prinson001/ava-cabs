@@ -1,17 +1,11 @@
 const h1 = document.querySelector(".heading-primary");
 
-///////////////////////////////////////////////////////////
-// Make mobile navigation work
-
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
-
-///////////////////////////////////////////////////////////
-// Smooth scrolling animation
 
 const allLinks = document.querySelectorAll("a:link");
 
@@ -43,9 +37,6 @@ allLinks.forEach(function (link) {
   });
 });
 
-///////////////////////////////////////////////////////////
-// Sticky navigation
-
 const sectionHeroEl = document.querySelector(".section-hero");
 
 const obs = new IntersectionObserver(
@@ -70,9 +61,6 @@ const obs = new IntersectionObserver(
 );
 obs.observe(sectionHeroEl);
 
-///////////////////////////////////////////////////////////
-// Fixing flexbox gap property missing in some Safari versions
-
 function checkFlexGap() {
   var flex = document.createElement("div");
   flex.style.display = "flex";
@@ -90,9 +78,6 @@ function checkFlexGap() {
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
-
-/////////////////////////////////////////////////////////////////////
-//ANIMATION INTERSECTION OBSERVER
 
 const options = {
   root: null,
@@ -131,9 +116,6 @@ arr.forEach((a) => {
   animationObserver.observe(a);
 });
 
-/////////////////////////////////////////////////////////////////////
-//EMAIL SERVICE
-
 function sendMail(e) {
   e.preventDefault();
   var params = {
@@ -157,13 +139,12 @@ function sendMail(e) {
       document.getElementById("email").value = "";
       document.getElementById("place").value = "";
       console.log(res);
-      alert("Your message sent successfully!!(We will contact you back via mail or via call)");
+      alert(
+        "Your message sent successfully!!(We will contact you back via mail or via call)"
+      );
     })
     .catch((err) => console.log(err));
 }
-
-// /////////////////////////////////////////////////////////////////
-// IMAGE OPTIMAZATION
 
 const images = document.querySelectorAll("img");
 console.log(images);
