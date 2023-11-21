@@ -144,8 +144,8 @@ function sendMail(e) {
     end_date: document.getElementById("end-date").value,
     place: document.getElementById("place").value,
   };
-  const serviceID = "service_e9pi0zh";
-  const templateID = "template_pxnqn9e";
+  const serviceID = "service_ir9cbzj";
+  const templateID = "template_r7x2gbo";
 
   emailjs
     .send(serviceID, templateID, params)
