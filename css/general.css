@@ -17,9 +17,7 @@ body {
   overflow-x: hidden;
 }
 
-/**************************/
-/* GENRAL REUSABLE COMPONENTS */
-/**************************/
+
 
 .container {
   max-width: 120rem;
@@ -93,9 +91,7 @@ body {
   letter-spacing: 0.75px;
 }
 
-/*****************/
-/* FLOATING ICON */
-/*****************/
+
 
 .section-floating-icon {
   display: none;
