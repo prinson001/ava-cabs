@@ -108,8 +108,13 @@
 
 .service-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2.8rem;
+}
+
+.service-container-2 {
+  display: flex;
+  justify-content: center;
 }
 
 .service-card {
@@ -118,6 +123,11 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+
+.service-container-2 .service-card {
+  margin-top: 4.8rem;
+  max-width: 23.25%;
 }
 
 .service-img {
