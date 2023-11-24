@@ -72,6 +72,10 @@
     gap: 4.4rem;
   }
 
+  .service-container-2 .service-card {
+    max-width: 50.25%;
+  }
+
   .card-text {
     padding: 4.4rem 3.6rem;
   }
@@ -229,7 +233,7 @@
   }
 
   .service-container-2 .service-card {
-    max-width: 100%;
+    max-width: 85%;
   }
 
   .card-text {
